@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://faketileremastered.png" type="Texture" id=1]
+
+[node name="Faketile" type="Node"]
+
+[node name="faketileremasterd" type="Sprite" parent="."]
+position = Vector2( 1120.46, 223.265 )
+scale = Vector2( 0.531065, 0.531065 )
+texture = ExtResource( 1 )

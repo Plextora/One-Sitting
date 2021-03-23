@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/what_a_loser.gd" type="Script" id=1]
+[ext_resource path="res://Rick Astley - Never Gonna Give You Up (Video).webm" type="VideoStream" id=2]
+
+[node name="ded" type="Node"]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_left = 32.0
+margin_right = 672.0
+margin_bottom = 384.0
+stream = ExtResource( 2 )
+volume_db = 24.0
+autoplay = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
