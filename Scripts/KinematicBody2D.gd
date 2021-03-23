@@ -1,6 +1,3 @@
-# I wanted to put this script in the scripts folder but godot
-# Went big baby rage so it's just randomly placed in the files.
-# Sorry!
 
 extends KinematicBody2D
 
