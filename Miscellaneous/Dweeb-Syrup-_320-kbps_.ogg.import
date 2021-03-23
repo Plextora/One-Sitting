@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dweeb-Syrup-_320-kbps_.ogg-7dc2bd1fe7b1d2c8201d84ded7a18793.oggstr"
+
+[deps]
+
+source_file="res://Dweeb-Syrup-_320-kbps_.ogg"
+dest_files=[ "res://.import/Dweeb-Syrup-_320-kbps_.ogg-7dc2bd1fe7b1d2c8201d84ded7a18793.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
