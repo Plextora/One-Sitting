@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://TileMap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://WorldComplete.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/WorldComplete3.gd" type="Script" id=4]
+[ext_resource path="res://DeathArea.tscn" type="PackedScene" id=5]
+[ext_resource path="res://weathercrap/src/weather.tscn" type="PackedScene" id=7]
+
+[node name="Level3" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64, 200 )
+
+[node name="TileMap" parent="." instance=ExtResource( 1 )]
+tile_data = PoolIntArray( -327633, 0, 196608, -327632, 0, 7, -327629, 0, 1, -327628, 0, 2, -327625, 0, 6, -327624, 0, 196610, -262098, 0, 196613, -262096, 0, 65542, -262095, 0, 196609, -262094, 0, 196609, -262093, 0, 65544, -262092, 0, 65547, -262091, 0, 196609, -262090, 0, 196609, -262089, 0, 65543, -262084, 0, 196613, -196563, 0, 196613, -131060, 0, 6, -131059, 0, 196609, -131058, 0, 7, -65525, 0, 6, -65524, 0, 65543, -65522, 0, 65542, -65521, 0, 7, -65493, 0, 196613, 10, 0, 6, 11, 0, 65543, 15, 0, 131077, 19, 0, 196613, 26, 0, 196613, 30, 0, 196613, 34, 0, 196613, 38, 0, 196613, 41, 0, 196613, 65545, 0, 6, 65546, 0, 65543, 131080, 0, 6, 131081, 0, 65543, 131095, 0, 196613, 196615, 0, 6, 196616, 0, 65543, 262144, 0, 196608, 262145, 0, 196609, 262146, 0, 196609, 262147, 0, 196609, 262148, 0, 196609, 262149, 0, 196609, 262150, 0, 196609, 262151, 0, 65543 )
+
+[node name="DeathArea" parent="." instance=ExtResource( 5 )]
+
+[node name="WorldComplete" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3872, -274 )
+script = ExtResource( 4 )
+
+[node name="Weather" parent="." instance=ExtResource( 7 )]
+followNode = NodePath("../Player")

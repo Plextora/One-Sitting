@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://you better stop meme (Original) (Rare!).webm" type="VideoStream" id=1]
+
+
+
+[node name="PogChamp" type="Node"]
+
+[node name="VideoPlayer" type="VideoPlayer" parent="."]
+margin_left = 197.0
+margin_top = 2.0
+margin_right = 421.0
+margin_bottom = 354.0
+stream = ExtResource( 1 )
+volume_db = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
